@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*background: url(twit.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;*/
+
+}
+/*.footer {
+    padding: 20px;
+}*/
+.main {
+    display: flex;
+    flex-basis: auto;
+    align-self: flex-start;
+    flex-wrap: wrap;
+}
+#first::before {
+    content: url(icons.png);
+   /* width: 5px;
+    height: 5px;*/
+}
+#second::before {
+    content: url(icons.png);
+    /*width: 5px;
+    height: 5px;
+    left: 0px;*/
+}
+#third::before {
+    content: url(icons.png);
+   /* width: 5px;
+    height: 5px;
+    left: 0px;*/
+}
+.parta {
+    flex: 50%;
+    background: url(trial.jpg);
+    background-repeat: no-repeat;
+    padding: 350px;
+    background-size: contain;
+    background-attachment: scroll;
+}
+.partb {
+    flex: 50%;
+    background-color: white;
+    padding: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+}
+#bi {
+    font-size: 35px;
+    text-align: justify;
+    
+}
+#bg {
+    font-weight: 100%;
+}
+
+.button {
+    background-color: #33b5e5;
+    border: #33b5e5;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    margin: 16px 8px;
+    cursor: pointer;
+    border-radius: 35px;
+    width: 550px;
+}
+
+.button:hover {
+    background-color: white;
+    color: #33b5e5;
+    border: 2px solid #33b5e5;
+}
+
+.twitg {
+    width: 50px;
+    height: 40px;
+    position: middle;
+}
+.footer {
+    display: flex;
+    background-color: white;
+    
+}
+
+.footer a {
+    color: indigo;
+    padding: 13px;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+#caption {
+    text-align: center;
+    color: indigo;
+    background-color: white;
+}
