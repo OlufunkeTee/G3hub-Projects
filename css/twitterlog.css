@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -15,41 +16,47 @@ body {
 }*/
 .main {
     display: flex;
-    flex-basis: auto;
-    align-self: flex-start;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    max-width: 200px;
+    height: 500px;
+    justify-content: space-between;
+    
 }
-#first::before {
-    content: url(icons.png);
+/*#first::before {
+    content: url(../placeholder/icons.png);
    /* width: 5px;
-    height: 5px;*/
+    height: 5px;
 }
+Haven't gotten the icons to use yet and i'm also having issues with the text.
 #second::before {
-    content: url(icons.png);
+    content: url(../placeholder/icons.png);
     /*width: 5px;
     height: 5px;
-    left: 0px;*/
+    left: 0px;
 }
 #third::before {
-    content: url(icons.png);
+    content: url(../placeholder/icons.png);
    /* width: 5px;
     height: 5px;
-    left: 0px;*/
-}
+    left: 0px;
+}*/
 .parta {
-    flex: 50%;
-    background: url(trial.jpg);
+    background: url(../placeholder/trial.jpg);
     background-repeat: no-repeat;
-    padding: 350px;
+    padding: 260px;
     background-size: contain;
     background-attachment: scroll;
+    color: white;
+    
 }
 .partb {
-    flex: 50%;
     background-color: white;
-    padding: 100px;
+    padding: 90px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
+    
 }
 #bi {
     font-size: 35px;
@@ -97,15 +104,18 @@ body {
     height: 40px;
     position: middle;
 }
+
 .footer {
-    display: flex;
-    background-color: white;
-    
+    /*display: inline-block;*/
+    background-color: white; 
+    margin-bottom: auto;
+    font-size: 90%;
+    display: -webkit-inline-flex;
 }
 
 .footer a {
     color: indigo;
-    padding: 13px;
+    padding: 6.5px;
     text-decoration: none;
     text-align: justify;
 }
@@ -117,4 +127,5 @@ body {
     text-align: center;
     color: indigo;
     background-color: white;
+    font-size: smaller;
 }
